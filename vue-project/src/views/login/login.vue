@@ -13,7 +13,8 @@
     <el-button type="primary" @click="login" size="medium">登录</el-button>
     <router-link to="/register" tag='p' class="span1"><i class="el-icon-s-custom"></i>去注册新账号>></router-link>
     <router-link to="/loginMg" tag='p' class="span2"><i class="el-icon-s-shop"></i>商家登录通道>></router-link>
-    <el-divider><i class="el-icon-milk-tea"> have a good time</i></el-divider>
+    <small>测试账号为admin,密码123</small>
+   
   </div>
   </main>
 </template>

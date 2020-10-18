@@ -173,7 +173,7 @@ const routes = [
     },
     {
         path: "/",
-        redirect: "/login",
+        redirect: "/loginMg",
     },
     {
         path: "/system",
@@ -271,6 +271,7 @@ const routes = [
 
 const router = new VueRouter({
     routes,
+    mode:'hash'
 });
 
 export default router;
