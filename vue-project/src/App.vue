@@ -19,7 +19,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
-  min-width: 1500px;
+  /* min-width: 1500px; */
   /* min-height: 1000px; */
 }
 #app {
