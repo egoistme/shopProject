@@ -10,7 +10,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'http://139.198.16.133:3000',
+    baseURL: 'http://139.198.18.84:3000',
     timeout: 3000 // 设置超时的时间，超过设置时间自动断开连接
 });
 
