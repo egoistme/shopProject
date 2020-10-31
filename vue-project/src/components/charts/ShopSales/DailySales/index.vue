@@ -78,7 +78,8 @@ export default {
   justify-content: space-between;
 
   .chart {
-    width: 1200px;
+    // width: 1200px;
+    width: 65vw;
     height: inherit;
     #daily-sales-charts {
       height: inherit;
@@ -86,7 +87,8 @@ export default {
     }
   }
   .rank {
-    width: 380px;
+    // width: 380px;
+    width: 30vw;
     height: inherit;
     .rankTitle{
         font-size: 14px;

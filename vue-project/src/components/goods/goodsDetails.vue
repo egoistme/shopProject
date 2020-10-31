@@ -6,7 +6,7 @@
         <span class="edit" @click="isShowedit">编辑商品</span>
       </div>
       <div class="left">
-        <img :src="'http://localhost:3000/images/'+item.image" alt />
+        <img :src="url+item.image" alt />
       </div>
       <div class="right">
         <h2>{{item.name}}</h2>
@@ -64,6 +64,7 @@ const { mapState, mapActions } = createNamespacedHelpers("goods");
 export default {
   data() {
     return {
+      url:this.BASE_URL+"/images/",
       flag: false,
       options: [
         {

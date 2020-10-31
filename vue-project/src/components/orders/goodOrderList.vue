@@ -13,7 +13,7 @@
         <template slot-scope="scope">
           <el-image
             style="width: 100px; height: 100px"
-            :src="'http://localhost:3000/images/'+scope.row.goodId.image"
+            :src="url+scope.row.goodId.image"
             fit="cover"
           ></el-image>
         </template>
@@ -53,6 +53,7 @@ const { mapState: mapStates } = createNamespacedHelpers("shops");
 export default {
   data() {
     return {
+      url:this.BASE_URL+"/images/",
       search: "",
     };
   },

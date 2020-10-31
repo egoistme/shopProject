@@ -9,11 +9,11 @@ import Echarts from "echarts"
 import './commonStyle/chartsCommonStyle.css'
 
 Vue.prototype.$api = api;
-
 Vue.prototype.$api = api;
 Vue.prototype.$echarts = Echarts;
 Vue.config.productionTip = false
-
+Vue.prototype.BASE_URL = 'http://139.198.18.84:3000'
+// Vue.prototype.BASE_URL = 'http://localhost:3000';
 new Vue({
   router,
   store,

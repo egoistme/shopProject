@@ -13,7 +13,7 @@
         <template slot-scope="scope">
           <el-image
             style="width: 100px; height: 100px"
-            :src="'http://localhost:3000/images/'+scope.row.goodId.image"
+            :src="url+scope.row.goodId.image"
             fit="cover"
           ></el-image>
         </template>
@@ -54,6 +54,8 @@ export default {
   data() {
     return {
       search: "",
+      url:this.BASE_URL+"/images/",
+
     };
   },
   created() {

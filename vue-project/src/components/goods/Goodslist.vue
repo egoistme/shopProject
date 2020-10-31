@@ -20,7 +20,7 @@
           <i>
             <router-link to="goodsDetails.vue">
               <img
-                :src="'http://localhost:3000/images/'+item.image"
+                :src="url+item.image"
                 alt
                 @click="getgoods(item._id)"
               />
@@ -48,6 +48,7 @@ const { mapState: mapStates } = createNamespacedHelpers("shops");
 export default {
   data() {
     return {
+      url:this.BASE_URL+"/images/",
       good: {
         id: "",
         status: false,

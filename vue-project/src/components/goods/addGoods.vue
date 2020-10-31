@@ -11,7 +11,7 @@
       >
         <el-form-item label="上传商品图片:">
           <el-upload
-            action="http://localhost:3000/images/upload"
+            :action="baseUrl"
             list-type="picture"
             :on-success="loadsuccess"
           >
@@ -49,7 +49,7 @@
         </el-form-item>
         <el-form-item label="上传详情图片:">
           <el-upload
-            action="http://localhost:3000/images/upload"
+            :action="baseUrl"
             list-type="picture"
             :on-success="loaddetailimg"
           >
@@ -73,6 +73,7 @@ const { mapState } = createNamespacedHelpers("shops");
 export default {
   data() {
     return {
+      baseUrl:this.BASE_URL + "/images/upload" ,
       good: {
         type: "",
         name: "",
